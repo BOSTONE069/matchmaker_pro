@@ -16,5 +16,9 @@ symbols = [u'\u2702',u'\u2705',u'\u2708',u'\u2709',u'\u270A',u'\u270B',u'\u270C'
 
 random.shuffle(symbols)
 
+for x in range(6):
+    for y in range(4):
+        button = Button(width = 3, height = 4)
+        button.grid(column = x, row = y)
 
 win.mainloop()
